@@ -9,6 +9,7 @@ import StartPageView from "./views/StartPageView.vue";
 import VTableView from "./views/VTableView.vue";
 import Vue3TableLiteView from "./views/Vue3TableLiteView.vue";
 import VueMasterySocksView from "./views/VueMasterySocksView.vue";
+import RealWorldVue3 from "./views/VueMasteryRealWorldVue3.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -42,6 +43,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/socks",
     name: "Socks",
     component: VueMasterySocksView,
+  },
+  {
+    path: "/realworldvue3",
+    name: "Real World Vue",
+    component: RealWorldVue3,
   },
   {
     path: "/grid",
