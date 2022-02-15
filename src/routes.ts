@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
+import About from "./VueMastery_RealWorldVue3/components/AboutComp.vue";
 import AboutView from "./views/AboutView.vue";
 import AccountView from "./views/AccountView.vue";
+import Event from "./VueMastery_RealWorldVue3/components/EventList.vue";
+import EventDetails from "./VueMastery_RealWorldVue3/components/EventDetails.vue";
 import ExamplesView from "./views/ExamplesView.vue";
 import GridView from "./views/GridView.vue";
 import protectedRoute from "./middlewares/protected";
 import StartPageView from "./views/StartPageView.vue";
 import VTableView from "./views/VTableView.vue";
 import Vue3TableLiteView from "./views/Vue3TableLiteView.vue";
-import VueMasterySocksView from "./views/VueMasterySocksView.vue";
 import VueMasteryRealWorldVue3 from "./views/VueMasteryRealWorldVue3.vue";
-import About from "./VueMastery_RealWorldVue3/components/AboutComp.vue";
-import Event from "./VueMastery_RealWorldVue3/components/EventList.vue";
-import EventDetails from "./VueMastery_RealWorldVue3/components/EventDetails.vue";
+import VueMasterySocksView from "./views/VueMasterySocksView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {

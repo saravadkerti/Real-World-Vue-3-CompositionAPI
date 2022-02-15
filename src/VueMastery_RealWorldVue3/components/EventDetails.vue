@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import IEvent from "../types/IEvent";
   import EventService from "../services/EventService";
+  import IEvent from "../types/IEvent";
   import { ref } from "vue";
   import { useRoute } from "vue-router";
 
@@ -14,23 +14,6 @@
     .catch((error) => {
       console.log(error);
     });
-  // export default {
-  //   props: ["id"],
-  //   data() {
-  //     return {
-  //       event: null,
-  //     };
-  //   },
-  //   created() {
-  //     EventService.getEvent(this.id)
-  //       .then((response) => {
-  //         this.event = response.data;
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   },
-  // };
 </script>
 <template>
   <div v-if="event">

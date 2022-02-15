@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import IEvent from "../types/IEvent";
   import EventCard from "./EventCard.vue";
   import EventService from "../services/EventService";
+  import IEvent from "../types/IEvent";
   import { ref } from "vue";
 
   const events = ref<Array<IEvent>>();
