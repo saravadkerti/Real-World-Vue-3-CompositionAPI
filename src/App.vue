@@ -70,7 +70,7 @@
     },
     {
       icon: "mdi-earth",
-      text: "Real World Vue3",
+      text: "Real World Vue 3",
       name: "",
       route: "/realworldvue3",
       disabled: false,

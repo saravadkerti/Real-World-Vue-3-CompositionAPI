@@ -9,7 +9,10 @@ import StartPageView from "./views/StartPageView.vue";
 import VTableView from "./views/VTableView.vue";
 import Vue3TableLiteView from "./views/Vue3TableLiteView.vue";
 import VueMasterySocksView from "./views/VueMasterySocksView.vue";
-import RealWorldVue3 from "./views/VueMasteryRealWorldVue3.vue";
+import VueMasteryRealWorldVue3 from "./views/VueMasteryRealWorldVue3.vue";
+import About from "./VueMastery_RealWorldVue3/components/AboutComp.vue";
+import Event from "./VueMastery_RealWorldVue3/components/EventList.vue";
+import EventDetails from "./VueMastery_RealWorldVue3/components/EventDetails.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -46,8 +49,25 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/realworldvue3",
-    name: "Real World Vue",
-    component: RealWorldVue3,
+    name: "RealWorld",
+    component: VueMasteryRealWorldVue3,
+    children: [
+      {
+        path: "/realworldvue3/about",
+        name: "About",
+        component: About,
+      },
+      {
+        path: "/realworldvue3/event",
+        name: "EventList",
+        component: Event,
+      },
+      {
+        path: "/event/:id",
+        name: "EventDetails",
+        component: EventDetails,
+      },
+    ],
   },
   {
     path: "/grid",
@@ -56,7 +76,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/about",
-    name: "About",
+    name: "AboutView",
     component: AboutView,
   },
 ];
